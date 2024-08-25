@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My SVG Project</title>
+    <title>My Adobe XD SVG Project</title>
     <style>
         body {
             display: flex;
@@ -13,13 +13,19 @@
             margin: 0;
             background-color: #f0f0f0;
         }
-        img {
+        object {
+            width: 80%;
+            height: auto;
+            max-width: 800px;
             border: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
-    <!-- Embed the SVG file -->
-    <img src="my-icon.svg" alt="My SVG Icon" width="100" height="100">
+    <!-- Embed the SVG file using the <object> tag -->
+    <object data="my-project.svg" type="image/svg+xml">
+        <!-- Fallback content if SVG cannot be displayed -->
+        Your browser does not support SVG.
+    </object>
 </body>
 </html>
